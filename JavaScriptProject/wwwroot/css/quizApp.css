@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+* {
+	box-sizing: border-box;
+}
+ @keyframes colorChange {
+    0% {
+      background-color: whitesmoke;
+    }
+    100% {
+      background-color: grey;
+    }
+  }
+body {
+	background-image:none;
+	animation: colorChange 1s linear reverse;
+	min-height: 100vh;
+	background-position: center center;
+	background-size: cover;
+	font-family: "Roboto", sans-serif;
+	margin: 0;	
+}
+
+.quiz-container {
+	background-color: white;	
+	align-items: center;
+	justify-content: center;
+	width: 400px;
+	transform: skew(10deg);
+	transform: translate(50%, 50%);
+	border-radius:10px;
+	border-shadow:0 0 15px 5px rgb(0,0,255,0.5);
+}
+

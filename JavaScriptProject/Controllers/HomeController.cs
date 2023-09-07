@@ -17,8 +17,11 @@ namespace JavaScriptProject.Controllers
 		{
 			return View();
 		}
-
-		public IActionResult Privacy()
+        public IActionResult QuizApp()
+        {
+            return View();
+        }
+        public IActionResult Privacy()
 		{
 			return View();
 		}

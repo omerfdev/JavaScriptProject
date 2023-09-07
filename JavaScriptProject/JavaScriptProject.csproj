@@ -7,7 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\css\quizApp.css" />
+    <Content Remove="wwwroot\js\quizApp.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\quizApp.css" />
     <None Include="wwwroot\css\countdownTimer.css" />
+    <None Include="wwwroot\js\quizApp.js" />
     <None Include="wwwroot\js\countdownTimer.js" />
   </ItemGroup>
 
