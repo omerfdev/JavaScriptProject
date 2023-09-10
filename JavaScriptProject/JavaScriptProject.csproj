@@ -8,14 +8,22 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\css\quizApp.css" />
+    <Content Remove="wwwroot\css\recipeApp.css" />
     <Content Remove="wwwroot\js\quizApp.js" />
+    <Content Remove="wwwroot\js\recipeApp.js" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\css\recipeApp.css" />
     <None Include="wwwroot\css\quizApp.css" />
     <None Include="wwwroot\css\countdownTimer.css" />
+    <None Include="wwwroot\js\recipeApp.js" />
     <None Include="wwwroot\js\quizApp.js" />
     <None Include="wwwroot\js\countdownTimer.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
 </Project>
