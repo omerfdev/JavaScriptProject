@@ -111,7 +111,7 @@ function getMealsLS() {
 }
 
 async function fetchFavMeals() {
-    // clean the container
+    
     favoriteContainer.innerHTML = "";
 
     const mealIds = getMealsLS();
