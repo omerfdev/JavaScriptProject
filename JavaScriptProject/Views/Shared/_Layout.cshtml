@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/quizApp.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/recipeApp.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/calculatorApp.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/countdownTimer.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/movieApp.css" asp-append-version="true" />  
 </head>
@@ -29,7 +29,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="QuizApp">Quiz App</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="RecipeApp">Recipe App</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="calculatorApp">Calculator App</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="MovieApp">Movie App</a>
@@ -53,11 +53,7 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
- @*   <script src="~/js/countdownTimer.js" asp-append-version="true"></script>
-    <script src="~/js/quizApp.js" asp-append-version="true"></script>
-    <script src="~/js/recipeApp.js" asp-append-version="true"></script>*@
-   
+    <script src="~/js/site.js" asp-append-version="true"></script>   
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

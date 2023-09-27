@@ -29,37 +29,11 @@ namespace JavaScriptProject.Controllers
             return View();
         }
 
-        public async Task<IActionResult> RecipeApp()
-        {
-            try
-            {
-                using (var httpClient = new HttpClient())
-                {
-                    var response = await httpClient.GetAsync(apiUrl);
-
-                    if (response.IsSuccessStatusCode)
-                    {
-                        var content = await response.Content.ReadAsStringAsync();
-                        var categories = JsonConvert.DeserializeObject<CategoryModel>(content);
-                        ViewBag.Categories = categories;
-                        return View("recipeApp", categories);
-                    }
-                    else
-                    {
-                        return View("Error");
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                return View("Error");
-            }
-        }
-
-        public IActionResult Privacy()
+        public IActionResult calculatorApp()
         {
             return View();
         }
+
 
         public IActionResult MovieApp()
         {
